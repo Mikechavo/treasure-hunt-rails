@@ -1,0 +1,79 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    link href="styles.css" rel="stylesheet" /
+    title Mikes Treasure
+    link href="https://cdn.pixabay.com/photo/2022/05/08/08/49/treasure-map-7181572_1280.jpg" rel="icon" type="image/x-icon" /
+  body
+    nav
+      a href="https://www.google.com/search?q=treasure%20map&tbm=isch&tbs=il:cl&hl=en&sa=X&ved=0CAAQ1vwEahcKEwiAlMnHrfv_AhUAAAAAHQAAAAAQBA&biw=1261&bih=1272#imgrc=g6CcblZ_tsH-cM" target="_blank"  Treasure Hunt Maps
+      br/
+      a href="https://en.wikipedia.org/wiki/Treasure_hunt" target="_blank"  About Treasure Hunts
+    header
+      h1#top.title-page Mikes Treasure Hunt Game
+    nav
+      #click
+        ul
+          li
+            a href="#intructions" 
+              button Instructions
+          li
+            a href="#rules" 
+              button Rules
+          li
+            a href="#clues" 
+              button Clues
+      main
+        div
+          center
+            img#myimage alt=("Treasure Map") border="10" center="" height="400" src="https://p0.pxfuel.com/preview/135/991/792/chest-treasure-pirate-money.jpg" width="620" /
+        h2#intructions Instructions:
+        p Use the moving gameboard with 8 doors to play the game.
+        h3#rules Rules:
+        ul
+          li Click on the doors to find the treasure.
+          li You only get 4 chances. There is a counter for you so you can keep track of the doors youve opened and the doors you have remaining.
+          li Pay attention to the alert window on this page and follow the instructions as they appear.
+          li
+            strong Find the treasure!
+        h3#clues Clues:
+        ol
+          li There are tree emojis, which mean you are still safe to proceed to the next door.
+          li There are bomb emojis, which is game over and you will need to restart the game.
+          li There is a rainbow emoji, which means you win.
+          li
+            strong SIDE NOTE:
+            | Once a door is opened the shape of the square changes. Becareful these doors are shaking rather fast!
+        table border="4" style=("height: 100px; width: 100px;") 
+          tr
+            td Doors Opened
+            td Doors Remaining
+          tr
+            td#counter
+            td#countRemain
+        button#restart onclick="location.reload()" type="button"  Restart Game
+        br/
+        br/
+        table#gameboard border="1" 
+          tr
+            td#1 onclick="treasure(1)" 
+              img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7820919/door-clipart-md.png" style=("height: 150px; width: 150px;") /
+            td#2 onclick="treasure(2)" 
+              img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7820919/door-clipart-md.png" style=("height: 150px; width: 150px;") /
+            td#3 onclick="treasure(3)" 
+              img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7820919/door-clipart-md.png" style=("height: 150px; width: 150px;") /
+            td#4 onclick="treasure(4)" 
+              img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7820919/door-clipart-md.png" style=("height: 150px; width: 150px;") /
+            td#5 onclick="treasure(5)" 
+              img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7820919/door-clipart-md.png" style=("height: 150px; width: 150px;") /
+            td#6 onclick="treasure(6)" 
+              img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7820919/door-clipart-md.png" style=("height: 150px; width: 150px;") /
+            td#7 onclick="treasure(7)" 
+              img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7820919/door-clipart-md.png" style=("height: 150px; width: 150px;") /
+            td#8 onclick="treasure(8)" 
+              img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7820919/door-clipart-md.png" style=("height: 150px; width: 150px;") /
+      footer
+        | © Mike Chavez
+        a href="#top"  Go to top
+      script src="treasurehunt.js" type="text/javascript" 
