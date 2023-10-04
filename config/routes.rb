@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
- get '/' => 'treasurehunt#slimm'
+ get '/', to: 'treasurehunt#index'
+
+ root to: 'treasurehunt#index'
 end

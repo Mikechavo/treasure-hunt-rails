@@ -1,5 +1,5 @@
 class TreasurehuntController < ApplicationController
   def index
-   @treasurehunt 
+ render :index
   end
 end

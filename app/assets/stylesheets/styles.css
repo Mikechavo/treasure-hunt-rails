@@ -1,0 +1,75 @@
+a {
+  color: rgb(212, 21, 21);
+  line-height: 1.3em;
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(215, 17, 241);
+  background-color: aquamarine;
+  background-image: url(https://pixahive.com/wp-content/uploads/2020/10/Green-and-dark-forest-132767-pixahive.jpg);
+  background-size: auto;
+ 
+}
+
+.title-page {
+  font-size: 46px;
+  text-align: center;
+  color: chartreuse;
+  animation: shake 2.5s;
+  animation-iteration-count: infinite;
+}
+
+#gameboard {
+  text-align: center;
+  color:rgb(253, 252, 252);
+  border-color: crimson;
+  animation: shake 0.9s;
+  animation-iteration-count: infinite;
+}
+
+#intructions {
+  border-style: dashed;
+  text-align: center;
+  color: coral;
+  animation: shake 9.0s;
+  animation-iteration-count: infinite;
+}
+
+#rules {
+  border-style: double;
+  text-align: center;
+  color: coral;
+  animation: shake 9.0s;
+  animation-iteration-count: infinite;
+}
+
+#clues{
+  border-style:solid;
+  text-align: center;
+  color: coral;
+  animation: shake 9.0s;
+  animation-iteration-count: infinite;
+}
+
+#click :hover {
+  color:red;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
